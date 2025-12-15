@@ -149,3 +149,68 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participant info styles */
+.participant-info {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #ffffff;
+  max-width: 420px;
+  margin-bottom: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.participant-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #e8eaf6;
+  display: inline-block;
+  flex: 0 0 56px;
+}
+
+.participant-meta {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.participant-name {
+  font-weight: 700;
+  color: #1a237e;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.participant-role {
+  font-size: 13px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.participant-contact {
+  font-size: 13px;
+  color: #666;
+  margin-top: 6px;
+  word-break: break-all;
+}
+
+/* Hide sensitive participant identifiers by default (and when printing) */
+.participant-id,
+.participant-secret {
+  display: none;
+}
+
+/* Utility: visually hidden for accessibility */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
